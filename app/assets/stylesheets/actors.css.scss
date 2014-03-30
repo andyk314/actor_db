@@ -1,0 +1,260 @@
+/*// Place all the styles related to the Actors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+#talkbubble1 {
+  width: 320px;
+  height: 80px;
+  margin-top: 6%;
+  margin-left: 40%; 
+  padding: 1%;
+  font-size: 1.55em;
+  font-family: Muli;
+  font-weight: bold;
+  background: #ffb309;
+  position: absolute;
+  border: 6px solid white;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+#talkbubble1:before {
+  content:"";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid white;
+  border-bottom: 13px solid transparent;
+}
+
+ #talkbubble2 {
+  width: 350px;
+  height: 80px;
+  margin-top: 11%;
+  margin-left: 20%; 
+  padding: 1%;
+  font-size: 1.53em;
+  font-family: Muli;
+  font-weight: bold;
+  color: white;
+  background: #ffb309;
+  position: relative;
+  border: 6px solid white;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+#talkbubble2:before {
+  content:"";
+  position: absolute;
+  left: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid white;
+  border-bottom: 13px solid transparent;
+}
+
+#triangle_down1 {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #ff5847;
+  margin: 0 auto;
+}
+
+#triangle_down2 {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #ffb309;
+  margin: 0 auto;
+  position: relative;
+}
+
+.stripe {
+  padding-top: 3%;
+  background-color: #ff5847;
+}
+
+#searchbar {
+  right: 45%;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.text-input {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+.thumbnail {
+  text-align: center;
+  float:left;
+  width: 300px;
+}
+
+.actormain {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#actors {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.actornameshow {
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 80px;
+  color: white;
+  font-family: 'Fascinate Inline', cursive;
+  margin: 0 auto;
+  font-size: 77px;
+}
+
+.budget_title {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+  /*D3*/
+
+.chart { /*centering our canvas*/
+  width: 100%;
+  background-color: #ffb309;
+  margin: 0 auto;
+}
+
+.btn_contain {
+  width: 100%;
+  background-color: #ffb309;
+}
+
+.bar_btns {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.btn-default {
+  color: white !important;
+  background-color: #BF4235 !important;
+  border-color: transparent !important;
+}
+
+.btn-default:hover {
+  color: white !important;
+  background-color: #BF4235 !important;
+  border-color: transparent !important;
+  opacity: 0.5;
+  transition-property: opacity;
+  transition:opacity .5s ease-in;
+  -webkit-transition:opacity .5s ease-in;
+}
+
+
+/*BUTTONS FOR BUDGET PIE CHART*/
+.budget_btns {
+  width: 100%; 
+  background-color: #ff5847;
+  position: absolute;
+  padding-bottom: 50px;
+}
+
+.radio {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.chart_header {
+  margin-top: 18%;
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+  background-color: #ffb309;
+}
+
+.budget_header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
+.bar {
+  fill: #BF4235;
+}
+
+.bar:hover {
+  fill: #A61203;
+}
+
+.axis {
+  font: 10px sans-serif;
+  color: blue;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  color: blue;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: #b2b2b2;
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.pie_chart svg {
+  margin: 0 auto;
+  background-color: #ff5847;
+}
+
+.pie_chart {
+  background-color: #ff5847;
+  margin-top: -30px;
+  margin: 0 auto;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+@import "bootstrap";

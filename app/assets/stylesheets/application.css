@@ -1,0 +1,182 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+nav {
+  padding: 24px !important;
+}
+
+.pictureframe {
+  transition: 0.3s ease;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.pictureframe:hover {
+  border: 1px solid lightgrey;
+}
+
+.logo {
+  transition: 0.3s ease !important;
+  color: white !important;
+  font-size: 24px !important;
+  text-decoration: none !important;
+  border-top: 4px solid #0b9eb9 !important;
+  border-bottom: 4px solid #0b9eb9 !important;
+  padding: 20px 0 !important;
+  margin: 0 20px !important;
+}
+
+.logo:hover {
+  border-top: 4px solid #ffffff !important;
+  border-bottom: 4px solid #ffffff !important;
+  padding: 6px 0 !important;
+}
+
+
+img {
+  width: 100%;
+}
+
+body { 
+  background: #0b9eb9 !important;
+}
+
+aside {
+  height: 340px;
+  width: 340px;
+  padding-top: 1%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 61%;
+  font-family: Muli;
+  font-weight: bold;
+  color: white;
+  background-color: #ffb309;
+  border: 6px solid white;
+  border-radius: 10px;
+}
+
+section {
+  font-family: Muli;
+  font-weight: bold;
+  color: white;
+  background-color: #ff5847;
+  border: 6px solid white;
+  border-radius: 10px;
+
+}
+
+figcaption {
+  font-family: Muli;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.bio {
+  font-size: 1.1em;
+  background-color: #ffb309;
+  margin-left: 10%;
+  padding: 2%;
+  width: 400px;
+}
+
+.show_top_container{
+  min-height: 300px;
+}
+
+.quote {
+  width: 400px;
+  margin-left: 60%;
+  margin-top: -35%;
+  margin-bottom: 9%;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  padding: 2%;
+}
+
+.imagewrapper {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  border: 6px solid white;
+  border-radius: 10px;
+  width: 17%;
+}
+
+.imagewrapper img {
+  max-width: 100%;
+  height: auto;
+  width: auto; /* For IE8 */
+}
+
+
+
+
+        /* ROTTEN TOMATOES LISTS */
+
+.list_header {
+  color: #ff5847;
+}
+
+.list1 { 
+  display: inline-block;
+  margin-right: 200px;
+}
+
+.list1 ol { 
+  font-style:italic; 
+  font-family:Georgia, Times, serif; 
+  font-size:24px; 
+  color:#bfe1f1;  
+}
+
+.list1 ol li p { 
+  padding:8px; font-style:normal; 
+  font-family:Arial; 
+  font-size:13px; color: #0E6DA7; 
+}
+
+.list1 ol li p em { 
+  display:block;
+}
+.list2 {
+  padding-top: 5px;
+}
+.list2 ol { 
+  font-style:italic; 
+  font-family:Georgia, Times, serif; 
+  font-size:24px; 
+  color:#bfe1f1;  
+}
+
+.list2 ol li p { 
+  padding:8px; font-style:normal; 
+  font-family:Arial; 
+  font-size:13px; color: #0E6DA7; 
+}
+
+.list2 ol li p em { 
+  display:block;
+}
+
+#navbar {
+  background-color: transparent;
+  border: none;
+}
+
+@import "bootstrap";
