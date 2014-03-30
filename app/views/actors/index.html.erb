@@ -1,26 +1,18 @@
+<%= render 'nav_show' %>
 
-<div><%= render 'nav_show' %></div>
-<div id="searchbar">
-    <%= form_tag actors_path, method: 'post', id: "live-search", class: "styled" do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search by Actor Name!", class: "text-input",
-     id: "filter" %>
-    <span id="filter-count"></span>
-    <% end %>
-</div>
-<div id="actors">
-  
-  <%= render 'actor' %>
+<%= render 'search' %>
 
-</div>
+<%= render 'actor' %>
 
 <div class="pagination"> 
   <%= will_paginate @actors_pagination %>
 </div>
+
 <script type="text/javascript">
-$('img').insetBorder({
-  inset : 10,
-  borderColor : '#ffffff',
-  speed : 250,
-  borderType : 'solid'
-});
+  $('img').insetBorder({
+    inset : 10,
+    borderColor : '#ffffff',
+    speed : 250,
+    borderType : 'solid'
+  });
 </script>
