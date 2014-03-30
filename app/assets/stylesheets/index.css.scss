@@ -1,0 +1,68 @@
+body { 
+  background-color: black !important;
+} 
+
+#actors {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+	
+.row {
+  float: left;
+}	
+
+#searchbar {
+  right: 45%;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.text-input {
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+figure {
+  width: 262px;
+  margin: 0 10px;
+  padding: none;
+  transition: 0.3 ease;
+  text-align: center;
+}
+
+
+figcaption {
+  font-family: Muli;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  width: 262px;
+}
+
+/*figure:hover {
+  border: 5px solid white;
+}*/
+
+.thumbnail {
+  text-align: center;
+  float:left;
+  width: 300px; 
+}
+
+.pictureframe {
+  transition: 0.3s ease;
+  width: 262px;
+  height: 392px;
+}
+
+/*.pictureframe:hover {
+  border: 10px solid white;
+}*/
